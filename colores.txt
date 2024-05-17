@@ -1,0 +1,3 @@
+rgb(176, 145, 105); color del footer y nav
+rgb(192, 74, 74); color de botones
+brown; color de bordes

@@ -1,0 +1,489 @@
+@import url(https://fonts.googleapis.com/css?family=Caveat:regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Questrial:regular);
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=PT+Serif:regular,italic,700,700italic);
+
+:root {
+  --colorNavFooter: rgb(176, 145, 105);
+  --colorTxtBtn: rgb(192, 74, 74);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik";
+  font-size: 16px;
+}
+
+.cotainerTop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 140px;
+  padding: 10px 120px;
+}
+
+.cotainerTop > .title {
+  font-family: "Caveat";
+  font-weight: bolder;
+  text-transform: capitalize;
+  color: brown;
+  font-size: 4rem;
+}
+
+.containerLogos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.cotainerTop > .containerLogos > .containerSearchIcon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* gap: 4px; */
+  min-height: 15px;
+  margin-right: 28px;
+}
+
+.containerLogos > .containerSearchIcon > .iconSearch {
+  background-color: #dad8d86b;
+  padding: 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+.cotainerTop > .containerLogos > .containerSearchIcon > input[type="search"] {
+  border: 2px solid brown;
+  border-radius: 50px 0 0 50px;
+  outline: none;
+  padding: 4px 4px 4px 10px;
+}
+
+.cotainerTop > .containerLogos > .notificationLogo {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.cotainerTop > .containerLogos > .notificationLogo > img {
+  cursor: pointer;
+}
+
+.cotainerTop > .containerLogos > .notificationLogo > img:hover {
+  border-bottom: 2px solid black;
+}
+
+.navYbanner > nav {
+  background-color: var(--colorNavFooter);
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5px 100px;
+}
+
+.navYbanner > nav > a {
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.1rem;
+  /* padding: 0 100px; */
+}
+
+.navYbanner > nav > a:hover {
+  border-bottom: 1px solid #d6d6d6;
+  color: #d6d6d6;
+}
+
+.navYbanner > .containerImg {
+  background-image: url("img/portada.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+  height: 400px;
+  color: white;
+  padding: 0 250px;
+}
+
+.navYbanner > .containerImg > .containterTxtImage {
+  font-family: "PT Serif";
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navYbanner > .containerImg > .containterTxtImage > .txt1 {
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.navYbanner > .containerImg > .containterTxtImage > .txt2 {
+  font-family: "PT Serif";
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1.3rem;
+  margin-top: 30px;
+}
+
+main {
+  padding: 50px 30px;
+}
+
+main > .titleReco {
+  color: var(--colorTxtBtn);
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.containerRecomendaciones {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.containerRecomendaciones > .containerHarryPotter,
+.containerCienAniosSoledad,
+.containerInsoportableLevedadSer,
+.containerComoAguaChocolate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.containerRecomendaciones > .containerHarryPotter > .containerImgHP {
+  background-image: url(img/harryPotter.jpg);
+  background-position: center;
+  background-size: contain;
+  width: 70%;
+  height: 250px;
+}
+
+.containerRecomendaciones > .containerCienAniosSoledad > .containerImgCAS {
+  background-image: url(img/cienAniosSoledad.jpg);
+  background-position: center;
+  background-size: contain;
+  width: 78%;
+  height: 250px;
+}
+
+.containerRecomendaciones
+  > .containerInsoportableLevedadSer
+  > .containerInsoportableLevedadSerImg {
+  background-image: url(img/laInsoportableLevedadDelSer.jpg);
+  background-position: center;
+  background-size: contain;
+  width: 70%;
+  height: 250px;
+}
+
+.containerRecomendaciones
+  > .containerComoAguaChocolate
+  > .containerComoAguaChocolateImg {
+  background-image: url(img/comoAguaParaChocolate.jpg);
+  background-position: center;
+  background-size: contain;
+  width: 70%;
+  height: 250px;
+}
+
+.titleBook {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.nameAuthor {
+  margin-top: 8px;
+  font-size: 0.8rem;
+}
+
+.btnVerMas {
+  background-color: var(--colorTxtBtn);
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 6px;
+  margin-top: 8px;
+  font-size: 0.7rem;
+}
+
+main > .containerLibros {
+  margin-top: 100px;
+}
+
+main > .containerLibros > .titleLibros {
+  color: var(--colorTxtBtn);
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+main > .containerLibros > .containerBooks {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+main > .containerLibros > .containerBooks > .containerFuerteSilencio,
+.containerRayuela,
+.containerLeyHerodes,
+.containerArrancameVida,
+.containerHabitacionPropia {
+  display: flex;
+  flex-direction: column;
+}
+
+main
+  > .containerLibros
+  > .containerBooks
+  > .containerFuerteSilencio
+  > .containerFuerteSilencioImg {
+  background-image: url(img/fuerteEsElSilencio.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 250px;
+}
+
+main
+  > .containerLibros
+  > .containerBooks
+  > .containerRayuela
+  > .containerRayuelaImg {
+  background-image: url(img/rayuela.jfif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+}
+
+main
+  > .containerLibros
+  > .containerBooks
+  > .containerLeyHerodes
+  > .leyHerodesImg {
+  background-image: url(img/laLeyDeHerodes.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+}
+
+main
+  > .containerLibros
+  > .containerBooks
+  > .containerArrancameVida
+  > .arrancameVidaImg {
+  background-image: url(img/arrancameLaVida.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+}
+
+main
+  > .containerLibros
+  > .containerBooks
+  > .containerHabitacionPropia
+  > .habitacionPropiaImg {
+  background-image: url(img/unaHabitacionPropia.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+}
+
+.priceBtn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  text-align: center;
+}
+
+.priceBtn > .price {
+  color: rgb(202, 141, 27);
+  font-weight: 400;
+}
+
+.priceBtn > .btnComprar {
+  background-color: var(--colorTxtBtn);
+}
+
+.priceBtn > .btnComprar {
+  background-color: var(--colorTxtBtn);
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 6px;
+  margin-top: 8px;
+  font-size: 0.7rem;
+}
+
+main > .containerImgConocenos {
+  margin-top: 130px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+main > .containerImgConocenos > .ContainerLeft {
+  width: 100%;
+  text-align: justify;
+}
+
+main > .containerImgConocenos > .ContainerLeft > .titleContainerConocenos {
+  color: var(--colorTxtBtn);
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+main > .containerImgConocenos > .ContainerLeft > #txtP1 {
+  margin-top: 10px;
+}
+
+main > .containerImgConocenos > .ContainerLeft > .txtTeEsperamos {
+  text-align: center;
+  margin-top: 15px;
+  color: var(--colorTxtBtn);
+  font-weight: 600;
+}
+
+main > .containerImgConocenos > .containerRight {
+  width: 100%;
+  background-image: url("img/libreria.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 270px;
+}
+
+footer {
+  background-color: var(--colorNavFooter);
+  padding: 30px 15px;
+  color: white;
+  font-size: 0.85rem;
+
+}
+
+footer > .containerTopFooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 18px;
+  text-align: justify;
+}
+
+.titleElTunel,
+.titleInformacion, .titleSuscribete {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.line {
+  width: 100%;
+  border: 1px solid white;  
+  margin: 18px 0;
+}
+
+footer > .containerTopFooter > .elTunel > .txt {
+  text-align: justify;
+}
+
+footer > .containerTopFooter > .elTunel > .Address,
+.Phone,
+.email {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+footer > .containerTopFooter > .elTunel > .Address > .AddressTxt {
+  text-transform: capitalize;
+}
+
+footer > .containerTopFooter > .elTunel > .iconSocialNetworks {
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer > .containerTopFooter > .Informacion {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-height: 290px;
+}
+
+footer > .containerTopFooter > .Informacion > a {
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+}
+
+footer > .containerTopFooter > .Suscribete {
+  width: 100%;
+  min-height: 290px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer > .containerTopFooter > .Suscribete > .InputBtn {
+  width: 100%;
+  margin-top: 15px;
+}
+
+footer > .containerTopFooter > .Suscribete > .InputBtn > input[type="email"] {
+  font-family: 'Rubik';
+  padding: 4px 12px;
+  border: 1px solid var(--colorTxtBtn);
+  outline: none;
+  width: 80%;
+}
+
+footer > .containerTopFooter > .Suscribete > .InputBtn > .btnEnviarSus {
+  background-color: var(--colorTxtBtn);
+  color: white;
+  text-transform: capitalize;
+  padding: 2px 6px;
+  border: none;
+  border-radius: 4px;
+  width: 18%;
+}
+
+footer > .footerBotom {
+  text-align: center;
+  margin-top: 30px;
+}
